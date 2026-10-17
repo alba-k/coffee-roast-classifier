@@ -13,12 +13,19 @@ Stage 2 (physical action with the ESP32) is not part of this delivery.
     .\.venv\Scripts\Activate.ps1
 
 ## Reproduce the numbers in the paper
-    python -m evidence                       # photo counts at every step -> results\pipeline_counts.csv
+Works with this repository alone (model 2, the one in the paper):
+
     python -m evidence.accuracy --model 2 --errors   # correct/total, 95 % Wilson interval, errors, leak check
     python tools\evaluate_model.py --split data\val
     python tools\evaluate_model.py --split data\test
     python tools\eval_by_background.py --split data\val    # old paper vs white sheet
     python tools\eval_by_layout.py --split data\val        # group / scattered / single bean
+
+These need the recorder project (raw and intermediate photos, model 1), which is not in this repository.
+Place it in a folder called `coffee-dataset` next to this one:
+
+    python -m evidence                       # photo counts at every step -> results\pipeline_counts.csv
+    python -m evidence.accuracy              # also evaluates model 1
 
 ## Live camera
     python tools\classify_live.py --camera 0       # Q quits, S saves what the model sees
