@@ -1,0 +1,7 @@
+0 Claro
+1 Medio
+2 MedioOscuro
+3 Oscuro
+4 Quemado
+5 Fondo
+6 Verde

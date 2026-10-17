@@ -1,0 +1,8 @@
+# only to convert the Teachable Machine export (tfjs) to ONNX
+tensorflow-cpu==2.15.1
+tensorflowjs==4.17.0
+tf2onnx==1.16.1
+onnx==1.16.2
+protobuf<5
+numpy<2
+setuptools<70

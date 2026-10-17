@@ -1,0 +1,11 @@
+
+class             old ok/n    white ok/n
+claro                56/56         28/29
+medio                43/43         37/37
+medio_oscuro         72/72         25/25
+nada_otro            70/70         20/20
+oscuro               79/79         26/26
+quemado              54/54         38/41
+verde                50/50         31/33
+old    accuracy: 424/424 = 100.0%
+white  accuracy: 205/211 = 97.2%

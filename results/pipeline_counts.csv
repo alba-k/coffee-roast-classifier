@@ -1,0 +1,30 @@
+stage,title,folder,split,class,photos
+A2,"Recording, white sheet (kept after removing bursts)",/sessions/rcw-016jbk1hsp6ugtmwa7adfpx2/mnt/project/coffee-dataset/dataset_white/raw,,verde,102
+A2,"Recording, white sheet (kept after removing bursts)",/sessions/rcw-016jbk1hsp6ugtmwa7adfpx2/mnt/project/coffee-dataset/dataset_white/raw,,claro,102
+A2,"Recording, white sheet (kept after removing bursts)",/sessions/rcw-016jbk1hsp6ugtmwa7adfpx2/mnt/project/coffee-dataset/dataset_white/raw,,medio,198
+A2,"Recording, white sheet (kept after removing bursts)",/sessions/rcw-016jbk1hsp6ugtmwa7adfpx2/mnt/project/coffee-dataset/dataset_white/raw,,medio_oscuro,141
+A2,"Recording, white sheet (kept after removing bursts)",/sessions/rcw-016jbk1hsp6ugtmwa7adfpx2/mnt/project/coffee-dataset/dataset_white/raw,,oscuro,184
+A2,"Recording, white sheet (kept after removing bursts)",/sessions/rcw-016jbk1hsp6ugtmwa7adfpx2/mnt/project/coffee-dataset/dataset_white/raw,,quemado,168
+A2,"Recording, white sheet (kept after removing bursts)",/sessions/rcw-016jbk1hsp6ugtmwa7adfpx2/mnt/project/coffee-dataset/dataset_white/raw,,nada_otro (Fondo),86
+A2,"Recording, white sheet (kept after removing bursts)",/sessions/rcw-016jbk1hsp6ugtmwa7adfpx2/mnt/project/coffee-dataset/dataset_white/raw,,defectuoso,0
+C3,Model 2 split,/sessions/rcw-016jbk1hsp6ugtmwa7adfpx2/mnt/project/coffee-dataset/dataset_v2/split_final,train,verde,300
+C3,Model 2 split,/sessions/rcw-016jbk1hsp6ugtmwa7adfpx2/mnt/project/coffee-dataset/dataset_v2/split_final,train,claro,287
+C3,Model 2 split,/sessions/rcw-016jbk1hsp6ugtmwa7adfpx2/mnt/project/coffee-dataset/dataset_v2/split_final,train,medio,287
+C3,Model 2 split,/sessions/rcw-016jbk1hsp6ugtmwa7adfpx2/mnt/project/coffee-dataset/dataset_v2/split_final,train,medio_oscuro,340
+C3,Model 2 split,/sessions/rcw-016jbk1hsp6ugtmwa7adfpx2/mnt/project/coffee-dataset/dataset_v2/split_final,train,oscuro,357
+C3,Model 2 split,/sessions/rcw-016jbk1hsp6ugtmwa7adfpx2/mnt/project/coffee-dataset/dataset_v2/split_final,train,quemado,331
+C3,Model 2 split,/sessions/rcw-016jbk1hsp6ugtmwa7adfpx2/mnt/project/coffee-dataset/dataset_v2/split_final,train,nada_otro (Fondo),306
+C3,Model 2 split,/sessions/rcw-016jbk1hsp6ugtmwa7adfpx2/mnt/project/coffee-dataset/dataset_v2/split_final,val,verde,83
+C3,Model 2 split,/sessions/rcw-016jbk1hsp6ugtmwa7adfpx2/mnt/project/coffee-dataset/dataset_v2/split_final,val,claro,85
+C3,Model 2 split,/sessions/rcw-016jbk1hsp6ugtmwa7adfpx2/mnt/project/coffee-dataset/dataset_v2/split_final,val,medio,80
+C3,Model 2 split,/sessions/rcw-016jbk1hsp6ugtmwa7adfpx2/mnt/project/coffee-dataset/dataset_v2/split_final,val,medio_oscuro,97
+C3,Model 2 split,/sessions/rcw-016jbk1hsp6ugtmwa7adfpx2/mnt/project/coffee-dataset/dataset_v2/split_final,val,oscuro,105
+C3,Model 2 split,/sessions/rcw-016jbk1hsp6ugtmwa7adfpx2/mnt/project/coffee-dataset/dataset_v2/split_final,val,quemado,95
+C3,Model 2 split,/sessions/rcw-016jbk1hsp6ugtmwa7adfpx2/mnt/project/coffee-dataset/dataset_v2/split_final,val,nada_otro (Fondo),90
+C3,Model 2 split,/sessions/rcw-016jbk1hsp6ugtmwa7adfpx2/mnt/project/coffee-dataset/dataset_v2/split_final,test,verde,40
+C3,Model 2 split,/sessions/rcw-016jbk1hsp6ugtmwa7adfpx2/mnt/project/coffee-dataset/dataset_v2/split_final,test,claro,40
+C3,Model 2 split,/sessions/rcw-016jbk1hsp6ugtmwa7adfpx2/mnt/project/coffee-dataset/dataset_v2/split_final,test,medio,40
+C3,Model 2 split,/sessions/rcw-016jbk1hsp6ugtmwa7adfpx2/mnt/project/coffee-dataset/dataset_v2/split_final,test,medio_oscuro,50
+C3,Model 2 split,/sessions/rcw-016jbk1hsp6ugtmwa7adfpx2/mnt/project/coffee-dataset/dataset_v2/split_final,test,oscuro,50
+C3,Model 2 split,/sessions/rcw-016jbk1hsp6ugtmwa7adfpx2/mnt/project/coffee-dataset/dataset_v2/split_final,test,quemado,50
+C3,Model 2 split,/sessions/rcw-016jbk1hsp6ugtmwa7adfpx2/mnt/project/coffee-dataset/dataset_v2/split_final,test,nada_otro (Fondo),45

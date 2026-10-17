@@ -1,0 +1,23 @@
+# Python environments and caches (the teacher recreates them with setup.ps1)
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Local scratch folder
+_to_delete/
+live_captures/
+
+# LaTeX temporary files (keep main.tex, sections/, figures/ and main.pdf)
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.toc
+paper/*.bbl
+paper/*.blg
+paper/*.synctex.gz
+
+# Other authors' papers (copyrighted); the INDICE.md and CSV files stay
+referencias/**/*.pdf
+
+# NOT ignored on purpose: data/ (the teacher wants the dataset), model/, results/, firmware/

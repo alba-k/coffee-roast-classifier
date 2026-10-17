@@ -1,0 +1,10 @@
+
+class                    grupo        disperso      individual
+claro                    20/20           20/20             0/0
+medio                    20/20           20/20             0/0
+medio_oscuro             25/25           25/25             0/0
+nada_otro                30/30           15/15             0/0
+oscuro                   25/25           25/25             0/0
+quemado                  18/20           25/25             5/5
+verde                    20/20           15/15             5/5
+ALL                    158/160         145/145           10/10

@@ -1,0 +1,65 @@
+% Article for Revista 3i (UPDS) - same format as "Articulo Cientifico-Revista 3i.docx":
+% Arial 12 pt, letter, 1 in margins, 1.5 line spacing, no indents, justified, centred bold headings,
+% no page numbers, no footnotes, APA 7 references with hanging indent.
+% Compile: pdflatex main.tex (run twice). No external .bib needed.
+\documentclass[12pt,letterpaper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-noshorthands]{babel}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{microtype,booktabs,array,url,graphicx,xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec,setspace,caption,etoolbox,needspace}
+\usepackage[round,authoryear]{natbib}
+\renewcommand{\refname}{Referencias}
+\setlength{\bibhang}{0.5in}          % APA hanging indent (sangr\'ia francesa)
+\setlength{\bibsep}{6pt}
+\pagestyle{empty}                      % the template footer is empty
+\setstretch{1.43}                      % Word "1.5 lines" for Arial 12 pt
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\urlstyle{same}
+\Urlmuskip=0mu plus 1mu\relax
+\definecolor{tm}{HTML}{001F5F}         % title colour used in the template
+\titleformat{\section}{\bfseries\normalsize\centering}{}{0pt}{}
+\titlespacing*{\section}{0pt}{18pt}{4pt}
+\titleformat{\subsection}{\bfseries\normalsize}{}{0pt}{}
+\titlespacing*{\subsection}{0pt}{18pt}{4pt}
+\newcommand{\todo}[1]{\textcolor{red}{[#1]}}
+
+% APA-style table: bold label, italic title, rules only, note below
+\newenvironment{apatable}[2]{%
+  \par\begin{minipage}{\linewidth}\raggedright\setstretch{1.15}
+  \textbf{Tabla #1}\\[0.2em]\textit{#2}\par\vspace{0.3em}\small
+}{\end{minipage}\par\vspace{6pt}}
+% APA-style figure: bold label, italic title, picture, note below
+\newenvironment{apafigure}[2]{%
+  \par\begin{minipage}{\linewidth}\raggedright\setstretch{1.15}
+  \textbf{Figura #1}\\[0.2em]\textit{#2}\par\vspace{0.4em}
+}{\end{minipage}\par\vspace{6pt}}
+\newcommand{\nota}[1]{\par\vspace{0.3em}{\small\textbf{\textit{Nota.}} #1}\par}
+
+% Abstract blocks: indented 0.5 in, tighter line spacing (as in the template)
+\newenvironment{absblock}{\par\begingroup\setstretch{1.09}\leftskip=0.5in\rightskip=0.1in}{\par\endgroup}
+\newcommand{\absheading}[1]{\par\vspace{6pt}\noindent\textbf{#1}\par}
+
+\begin{document}
+\input{sections/portada}
+
+\input{sections/resumen}
+
+\input{sections/introduccion}
+% \input{sections/marco_teorico}  % activar cuando se redacte (la plantilla de la revista no lo exige)
+\input{sections/metodologia}
+
+\input{sections/resultados}
+
+\input{sections/conclusiones}
+
+\input{sections/referencias}
+
+\input{sections/final}
+\end{document}

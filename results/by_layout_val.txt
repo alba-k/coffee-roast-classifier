@@ -1,0 +1,10 @@
+
+class                    grupo        disperso      individual
+claro                    39/40           40/40             5/5
+medio                    42/42           25/25           13/13
+medio_oscuro             55/55           30/30           12/12
+nada_otro                65/65           10/10           15/15
+oscuro                   44/44           56/56             5/5
+quemado                  47/50           35/35           10/10
+verde                    40/40           35/35             6/8
+ALL                    332/336         231/231           66/68

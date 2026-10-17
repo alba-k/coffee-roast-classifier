@@ -1,0 +1,4 @@
+\section{Conclusiones}
+Se cumplió el objetivo de la primera etapa: un modelo entrenado con Teachable Machine, basado en una red tipo MobileNet mediante aprendizaje por transferencia, clasificó los siete grupos con una exactitud de 99,1\,\% en validación (629 de 635) y de 99,4\,\% en prueba (313 de 315), lo que permite entregar un prototipo funcional. Estos valores corresponden a las condiciones controladas del montaje: los ocho errores aparecieron sobre la hoja blanca (97,2\,\% de aciertos frente a 100\,\% sobre el papel inicial), por lo que el resultado no se extiende a otras luces, cámaras o fondos.
+
+En consecuencia, para el dispositivo final el fondo y la luz deben estandarizarse y ser los mismos para todas las clases, y el modelo debe medirse con fotos separadas por bloques. La acción física con el microcontrolador ESP32 corresponde a la etapa siguiente del proyecto.

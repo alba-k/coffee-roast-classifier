@@ -1,0 +1,66 @@
+\section{Resultados y discusión}
+\textbf{Resultados}
+
+La Tabla 1 detalla la distribución final de las 3.158 fotos; de ellas, 830 (26\,\%) son de la hoja blanca.
+
+\begin{apatable}{1}{Imágenes por clase y por conjunto del modelo 2}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Clase & Entrenamiento & Validación & Prueba & Total\\
+\midrule
+Verde & 300 & 83 & 40 & 423\\
+Claro & 287 & 85 & 40 & 412\\
+Medio & 287 & 80 & 40 & 407\\
+Medio oscuro & 340 & 97 & 50 & 487\\
+Oscuro & 357 & 105 & 50 & 512\\
+Quemado & 331 & 95 & 50 & 476\\
+Fondo & 306 & 90 & 45 & 441\\
+\midrule
+\textbf{Total} & \textbf{2.208} & \textbf{635} & \textbf{315} & \textbf{3.158}\\
+\bottomrule
+\end{tabular}
+\end{apatable}
+
+Con las fotos reservadas, el modelo 2 superó el 99\,\% de exactitud en validación y en prueba (Tabla 2). Los intervalos de confianza de los modelos 1 y 2 se solapan, por lo que no hay una diferencia estadísticamente significativa entre ellos.
+
+\begin{apatable}{2}{Exactitud de los modelos con las fotos separadas}
+\begin{tabular}{@{}llrrrc@{}}
+\toprule
+Modelo & Conjunto & Fotos & Aciertos & Exactitud (\%) & IC 95\,\% (\%)\\
+\midrule
+Modelo 1 & Validación & 470 & 468 & 99,6 & 98,5--99,9\\
+Modelo 1 & Prueba & 230 & 229 & 99,6 & 97,6--99,9\\
+Modelo 2 & Validación & 635 & 629 & 99,1 & 98,0--99,6\\
+Modelo 2 & Prueba & 315 & 313 & 99,4 & 97,7--99,8\\
+\bottomrule
+\end{tabular}
+\nota{Elaboración propia. Ninguna de estas fotos se usó en el entrenamiento. IC: intervalo de confianza de Wilson (Ecuación 2).}
+\end{apatable}
+
+Los ocho errores del modelo 2 fueron fotos de la hoja blanca. Seis se clasificaron como fondo (tres de quemado en grupo, dos de verde individual y una de claro en grupo) y dos de quemado en grupo se clasificaron como oscuro, con confianzas entre 0,780 y 1,000. Al separar los resultados según el fondo (Tabla 3), el modelo acertó las 663 fotos del papel inicial (100\,\%) y 279 de las 287 de la hoja blanca (97,2\,\%); los intervalos de confianza no se solapan (99,4 a 100,0\,\% frente a 94,6 a 98,6\,\%). Según la colocación de los granos, los dispersos se acertaron todos (376 de 376), los grupos en 98,8\,\% (490 de 496) y los individuales en 97,4\,\% (76 de 78), aunque en este último caso las fotos son pocas.
+
+\begin{apatable}{3}{Exactitud del modelo 2 según el fondo y la colocación de los granos}
+\begin{tabular}{@{}llrrrc@{}}
+\toprule
+Criterio & Grupo & Fotos & Aciertos & Exactitud (\%) & IC 95\,\% (\%)\\
+\midrule
+Fondo & Papel inicial & 663 & 663 & 100,0 & 99,4--100,0\\
+Fondo & Hoja blanca & 287 & 279 & 97,2 & 94,6--98,6\\
+\midrule
+Colocación & En grupo & 496 & 490 & 98,8 & 97,4--99,4\\
+Colocación & Dispersos & 376 & 376 & 100,0 & 99,0--100,0\\
+Colocación & Individuales & 78 & 76 & 97,4 & 91,1--99,3\\
+\bottomrule
+\end{tabular}
+\nota{Elaboración propia. Validación y prueba juntas (950 fotos). El fondo se identificó por la fecha en el nombre de cada foto.}
+\end{apatable}
+
+\textbf{Discusión}
+
+Los resultados indican que el prototipo clasifica los siete grupos con alta exactitud con fotos tomadas en el montaje controlado. Los errores se concentraron en la hoja blanca (97,2\,\% frente a 100\,\% en el papel inicial), lo que es coherente con que el fondo influya en la clasificación, como describen \citet{xiao2020} para imágenes de objetos y \citet{geirhos2020} para los atajos. Esta lectura tiene límites: la hoja blanca aporta 26\,\% de las fotos, por lo que el modelo vio menos ejemplos de ese fondo, y con estos datos no se puede separar el efecto del fondo del efecto de la cantidad de fotos.
+
+Seis de los ocho errores fueron granos clasificados como fondo, que es la clase del papel vacío. Una posible explicación es que, sobre la hoja blanca, los granos ocupan pocos píxeles y la imagen se parece a la del papel vacío; esta premisa queda como hipótesis y no se evaluó en este estudio.
+
+A pesar de estas limitaciones vinculadas al fondo, la exactitud general es mayor que la de trabajos similares: 96,75\,\% con cuatro niveles \citep{marzuki2025}, 93,8\,\% con ocho niveles Agtron \citep{anto2025} y 96\,\% con MobileNetV2 \citep{arsyan2026}. No es una comparación directa, porque cambian las clases, los conjuntos de datos y las condiciones de captura. Además, las fotos de validación y prueba vienen del mismo montaje y de las mismas tomas que las de entrenamiento, aunque se separaron por bloques para reducir la fuga de datos \citep{kapoor2022}. Por eso la cifra describe el desempeño en condiciones controladas y no garantiza el mismo resultado con otras luces, cámaras o fondos.
+
+Una exactitud alta con fotos guardadas no asegura el mismo resultado en uso real \citep{geirhos2020}. Además, los granos individuales están poco representados en el entrenamiento (243 fotos, 11\,\% del total de entrenamiento), y su exactitud (97,4\,\%) se midió con solo 78 fotos.
